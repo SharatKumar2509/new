@@ -1,5 +1,5 @@
-import {useState, useEffect} from "react";
-// backend
+import {useEffect} from "react";
+
 import { pricingWebsiteAudit } from "../constant/static";
 import TableSection from "./TableSection";
 import PricingComponent from "../components/PricingComponent";
@@ -9,6 +9,7 @@ const Pricing = () => {
 
   useEffect(() => {
     window.scrollTo(0,0);
+    document.title = "Overninja: Transparent pricing for all";
   });
 
   return (

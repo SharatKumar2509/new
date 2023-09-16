@@ -19,11 +19,7 @@ const CaseStudies = React.lazy(() => import("./pages/CaseStudies"))
 const CaseStudyDescription = React.lazy(() => import("./pages/CaseStudyDescription"))
 const BlogsPage = React.lazy(() => import("./pages/BlogsPage"))
 
-
-
 function App() {
-
-
   return (
     <BrowserRouter>
       <Navbar />

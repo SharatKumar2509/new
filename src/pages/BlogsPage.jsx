@@ -6,12 +6,14 @@ import BlogComponent from "../components/BlogComponent";
 const BlogsPage = () => {
 
   const [blogs, setBlogs] = useState([]);
+  const [top, setTop] = useState(0);
 
   useEffect(() => {
-    window.scrollTo(0,0);
-  });
-
-  useEffect(() => {
+    if(top==0) {
+      window.scrollTo(0,0);
+      setTop(1);
+    }
+    document.title = "Overninja: Explore our insights, trends, and industry knowledge";
     axios.get("https://www.overninja.com:8081/blogs")
     .then(res => {
       setBlogs(res.data);

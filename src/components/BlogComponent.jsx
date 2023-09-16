@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 const BlogComponent = ({ blog }) => {
   return (
     <div className="flex flex-col justify-between cursor-pointer">
-     <Link to={`/Blogs/${blog.path}`}> <img src={"https://www.overninja.com/uploads/blogs/"+blog.blog_image} alt={blog.title} className="w-full h-44 object-cover mb-2" />
-     </Link>
+     <Link to={`/Blogs/${blog.path}`}><img src={"https://www.overninja.com/uploads/blogs/"+blog.blog_image} alt={blog.title} className="w-full h-44 object-cover mb-2" />
       <div className='p-2'>
       <h3 className="text-md font-semibold">{blog.title}</h3>
       <p className="text-gray-500">By {blog.author}</p>
@@ -21,7 +20,7 @@ const BlogComponent = ({ blog }) => {
         </div>
       </div>
       </div>
-      
+     </Link>
     </div>
   );
 };

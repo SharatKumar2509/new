@@ -1,9 +1,10 @@
-import {useState, useEffect} from 'react';
+import {useEffect} from 'react';
 import { termsOfUseData as data } from '../constant/static';
 const TermsOfUse = () => {
 
   useEffect(() => {
     window.scrollTo(0,0);
+    document.title = "Overninja: Terms and Conditions";
   });
   
   return (

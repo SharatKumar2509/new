@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {  AiOutlineClose } from 'react-icons/ai';
 import QuickLinks from './NavBarLinks';
 import redlogo from "../assets/redlogo.png"
@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`bg-transparent font-custom  fixed top-0  left-0 right-0  z-50 ${isDrawerOpen ? 'h-screen' : ''}`}>
+    <nav className={`bg-transparent font-custom  fixed top-0  left-0 right-0  z-50 ${isDrawerOpen ? 'h-screen' : ''}`} style={{background: 'rgba(0, 0, 0, 0.45)'}}>
       <div className="w-[90%] mx-auto">
         <div className="flex  h-[10vh] mt-5 justify-between items-center">
           <div className="cursor-pointer">
@@ -92,15 +92,15 @@ const Navbar = () => {
             
      <li className="mb-2 ">
   
-  <a href="mailto:sales@overninja.com" target="_blank" className="text-[#cd0202] flex gap-1 items-center"> <FaEnvelope  size={22} /><span className='text-black'>sales@overninja.com</span></a>
+  <a href="mailto:sales@overninja.com" target="_blank" rel="noreferrer noopener" className="text-[#cd0202] flex gap-1 items-center"> <FaEnvelope  size={22} /><span className='text-black'>sales@overninja.com</span></a>
 </li>
 <li className="mb-2 ">
   
-<a href="https://wa.me/919998847740" target="_blank" className="text-[#cd0202] flex gap-1 items-center"> <FaWhatsapp  size={22} /><span className='text-black'>+91 9998847740</span></a>
+<a href="https://wa.me/919998847740" target="_blank" rel="noreferrer noopener" className="text-[#cd0202] flex gap-1 items-center"> <FaWhatsapp  size={22} /><span className='text-black'>+91 9998847740</span></a>
  
 </li>
 <li className="mb-2 ">
-<a href="skype:overninja.tech?call" target="_blank" className="text-[#cd0202] flex gap-1 items-center"> <FaSkype  size={22} /><span className='text-black'>overninja.tech</span></a>
+<a href="skype:overninja.tech?call" target="_blank" rel="noreferrer noopener" className="text-[#cd0202] flex gap-1 items-center"> <FaSkype  size={22} /><span className='text-black'>overninja.tech</span></a>
   
 </li>
           <li>

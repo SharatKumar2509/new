@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useEffect} from 'react'
 
 // from backend
 import { caseStudies } from '../constant/static'
@@ -12,6 +12,7 @@ const CaseStudies = () => {
 
   useEffect(() => {
     window.scrollTo(0,0);
+    document.title = "Overninja: Showcase of extraordinary and remarkable achievements";
   });
 
   return (

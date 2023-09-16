@@ -1,4 +1,5 @@
-import {useState, useEffect} from 'react'
+/* eslint-disable react/prop-types */
+import {useEffect} from 'react'
 
 const TableSection = ({sub}) => {
    
@@ -18,7 +19,7 @@ const TableSection = ({sub}) => {
     <td className="p-4 text-center"></td>
     <td className="p-4 text-center"></td>
   </tr>
-    {data.map(({subtitle,values})=>(  <tr>
+    {data.map(({subtitle,values}, index)=>(  <tr key={index}>
     <td className="p-4 border ">{subtitle}</td>
     <td className="p-4 border text-white bg-[#3f2caa] text-center">{values[0] }</td>
     <td className="p-4 border bg-[#ff0303]   text-white text-center">{values[1]}</td>

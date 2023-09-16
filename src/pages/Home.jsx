@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useEffect} from 'react'
 import clip1 from "../assets/homepagehero.mp4"
 
 import ReviewCarousel from '../components/ReviewsCarousel'
@@ -15,6 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     window.scrollTo(0,0);
+    document.title = "Overninja: Your Gateway to Limitless Possibilities";
   });
 
   return (

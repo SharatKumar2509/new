@@ -24,10 +24,7 @@ const BlogPageDescription = () => {
   });
 
   useEffect(() => {
-    window.scrollTo(0,0);
-  });
-
-  useEffect(() => {
+    // window.scrollTo(0,0);
     axios.post("https://www.overninja.com:8081/blogs/get", { path: id })
 			.then(res => {
 				if (res.data.length === 0) {
@@ -35,6 +32,7 @@ const BlogPageDescription = () => {
 				}
 				else {
 					setBlog(res.data[0]);
+          document.title = res.data[0].title;
 					axios.post("https://www.overninja.com:8081/blog/comment/get", { blog_id: res.data[0].id })
 						.then((res3) => {
 							setComments(res3.data);

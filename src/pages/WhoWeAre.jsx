@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 
 import clip2 from "../assets/whoweareinside1.mp4"
 import clip3 from "../assets/whoweareinside2.mp4"
@@ -15,6 +15,7 @@ const WhoWeAre = () => {
 
   useEffect(() => {
     window.scrollTo(0,0);
+    document.title = "Overninja: Where innovation meets passion";
   });
   
   return (

@@ -1,9 +1,10 @@
-import {useState, useEffect} from 'react';
+import {useEffect} from 'react';
 import { privacyPolicyData as data } from '../constant/static';
 const PrivacyPolicy = () => {
 
   useEffect(() => {
     window.scrollTo(0,0);
+    document.title = "Overninja: Privacy Policy";
   });
   
   return (
