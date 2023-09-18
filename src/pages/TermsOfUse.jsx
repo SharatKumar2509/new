@@ -8,7 +8,7 @@ const TermsOfUse = () => {
   });
   
   return (
-    <div className="bg-white w-[90%] mx-auto  py-28">
+    <div className="bg-white w-[90%] mx-auto mt-10 py-28">
       <h1 className="text-2xl font-bold">TERMS OF USE</h1>
       <p>{data.introduction}</p>
       {data.sections.map((section, index) => (

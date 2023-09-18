@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios';
 import {AiOutlineSend, AiOutlineCheck} from "react-icons/ai"
 import {BiLoaderCircle} from "react-icons/bi";
@@ -10,7 +10,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
+    phone: '+1 ',
     website: '',
     budget: '',
     services: '',
@@ -43,18 +43,37 @@ const ContactForm = () => {
           setStatus(0);
         }, 3000);
       }, 3000);
-      
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        website: '',
-        budget: '',
-        services: '',
-      });
+
+      axios.get("https://ipapi.co/json")
+        .then(res => {
+          setFormData({
+            name: '',
+            email: '',
+            phone: res.data.country_calling_code + " ",
+            website: '',
+            budget: '',
+            services: '',
+          });
+        })
+        .catch(err => console.log(err));
     }
   };
-    
+
+  useEffect(() => {
+    axios.get("https://ipapi.co/json")
+      .then(res => {
+        setFormData({
+          name: '',
+          email: '',
+          phone: res.data.country_calling_code + " ",
+          website: '',
+          budget: '',
+          services: '',
+        });
+      })
+      .catch(err => console.log(err));
+  });
+
   return (
     <form onSubmit={handleSubmit}>
       <div className="mb-4">

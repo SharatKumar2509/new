@@ -16,14 +16,14 @@ const Navbar = () => {
   return (
     <nav className={`bg-transparent font-custom  fixed top-0  left-0 right-0  z-50 ${isDrawerOpen ? 'h-screen' : ''}`} style={{background: 'rgba(0, 0, 0, 0.45)'}}>
       <div className="w-[90%] mx-auto">
-        <div className="flex  h-[10vh] mt-5 justify-between items-center">
+        <div className="flex  h-[10vh] mt-2 mb-2 justify-between items-center">
           <div className="cursor-pointer">
             <Link to={"/"}>
-            <img src={whitelogo} className='w-40 h-auto' />
+            <img src={redlogo} className='w-40 h-auto' />
             </Link>
           </div>
-          <div className='flex gap-1 text-white items-center'> 
-            <div onClick={()=> setIsDrawer2Open(true)} className=' cursor-pointer'>
+          <div className='flex gap-1 text-white items-center'>
+            <div onClick={()=> setIsDrawer2Open(true)} className=' cursor-pointer hover:bg-[#fd0202] p-2 me-3'>
               <FaPhoneAlt size={20} />
             </div>
             <button
@@ -52,8 +52,10 @@ const Navbar = () => {
         <div className="fixed grid sm:w-[30%]   top-0 right-0 w-full h-full  bg-white">
          
   <div className="flex  h-[10vh] p-4   items-center justify-between">
-  <div >
+  <div onClick={()=> setIsDrawerOpen(false)} >
+    <Link to="/">
       <img src={redlogo} alt="Logo" className="w-32 h-auto" />
+      </Link>
     </div>
     <div
       className="cursor-pointer text-red-400"

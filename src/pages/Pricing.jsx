@@ -13,7 +13,7 @@ const Pricing = () => {
   });
 
   return (
-    <div className="w-screen font-custom    mx-auto py-24">
+    <div className="w-screen font-custom mt-10 mx-auto py-24">
       <div className="text-center ">
         <h2 className="text-3xl sm:text-5xl font-bold">Transperant Pricing</h2>
         <p className="mt-5"> Pick a plan & improve engagement</p>
@@ -76,7 +76,6 @@ const Pricing = () => {
         <div className=" flex items-center justify-center">
           <Link to="/GetAFreeQuote">
             <span
-              onClick={() => setIsDrawer2Open(false)}
               className="mt-10 inline-block px-4 py-1 border border-[#fd0202]  rounded hover:bg-white text-[#fd0202] transition duration-300 ease-in-out"
             >
               Get a free quote

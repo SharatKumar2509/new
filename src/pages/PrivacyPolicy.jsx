@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
   });
   
   return (
-    <div className="bg-white w-[90%] mx-auto py-28">
+    <div className="bg-white w-[90%] mt-10 mx-auto py-28">
       <h1 className="text-2xl font-bold">PRIVACY POLICY</h1>
       <p>{data.introduction}</p>
       {data.sections.map((section, index) => (

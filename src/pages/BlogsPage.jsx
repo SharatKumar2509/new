@@ -22,7 +22,7 @@ const BlogsPage = () => {
   });
 
   return (
-    <div className="gap-10 flex flex-col items-center justify-center font-custom  py-24 ">
+    <div className="gap-10 flex flex-col items-center justify-center font-custom  mt-10 py-24 ">
       <div className=" w-[90%]  flex flex-col gap-4 items-center justify-center mb-4 sm:w-[60%] ">
         <h2 className="text-5xl  font-bold ">Blogs</h2>
         <p className=" text-center text-gray-400 ">

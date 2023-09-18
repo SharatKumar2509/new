@@ -1,7 +1,6 @@
 import ContactForm from './ContactForm';
 import { FaSkype, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
-
 import {
   FaInstagram,
   FaTwitter,
@@ -15,9 +14,9 @@ const Footer = () => {
   return (
     <div className="min-h-screen w-screen overflow-hidden font-custom bg-gray-900 flex flex-col lg:flex-row">
       {/* L (Desktop: 70% width, White Background) */}
-      <div className="py-8 w-full sm:w-[70%] flex flex-col justify-center items-center bg-white">
+      <div className="py-8 w-full pt-20 sm:w-[70%] flex flex-col justify-center items-center bg-white">
         {/* Contact Us Form */}
-        <h2 className="text-3xl  font-bold mb-4">Contact Us</h2>
+        <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
         <div className="sm:w-[60%] p-4 w-full">
           <ContactForm />
         </div>

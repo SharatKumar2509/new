@@ -11,6 +11,7 @@ const BlogPageDescription = () => {
 
   const id = useParams();
 
+  const [top, setTop] = useState(0);
   const [blog, setBlog] = useState({});
   const [comments, setComments] = useState([]);
   const [subscriber, setSubscriber] = useState("");
@@ -24,7 +25,11 @@ const BlogPageDescription = () => {
   });
 
   useEffect(() => {
-    // window.scrollTo(0,0);
+    if(top==0) {
+      window.scrollTo(0,0);
+      setTop(1);
+    }
+    document.title = "Overninja : Welcome to a world of knowledge and innovation!";
     axios.post("https://www.overninja.com:8081/blogs/get", { path: id })
 			.then(res => {
 				if (res.data.length === 0) {
@@ -32,7 +37,6 @@ const BlogPageDescription = () => {
 				}
 				else {
 					setBlog(res.data[0]);
-          document.title = res.data[0].title;
 					axios.post("https://www.overninja.com:8081/blog/comment/get", { blog_id: res.data[0].id })
 						.then((res3) => {
 							setComments(res3.data);
@@ -116,7 +120,7 @@ const BlogPageDescription = () => {
   };
 
   return (
-    <div className="w-screen font-custom   py-24">
+    <div className="w-screen font-custom mt-10 py-24">
       <div className="w-[90%] sm:w-[70%]  mx-auto">
         <img src={"https://www.overninja.com/uploads/blogs/" + blog.blog_image} className="w-[100%]" alt="blog img" />
 
