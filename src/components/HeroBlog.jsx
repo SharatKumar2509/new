@@ -10,7 +10,7 @@ const HeroBlog = () => {
   useEffect(() => {
     axios.get("https://www.overninja.com:8081/blogs")
     .then(res => {
-      setBlogs(res.data.splice(0,6));
+      setBlogs(res.data.slice(0,6));
     })
     .catch(err => console.log(err));
   });

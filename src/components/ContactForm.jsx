@@ -10,10 +10,11 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '+1 ',
+    code: '',
+    phone: '',
     website: '',
     budget: '',
-    services: '',
+    services: ''
   });
 
   const handleChange = (e) => {
@@ -49,10 +50,11 @@ const ContactForm = () => {
           setFormData({
             name: '',
             email: '',
-            phone: res.data.country_calling_code + " ",
+            code: res.data.country_calling_code + " ",
+            phone: '',
             website: '',
             budget: '',
-            services: '',
+            services: ''
           });
         })
         .catch(err => console.log(err));
@@ -65,10 +67,11 @@ const ContactForm = () => {
         setFormData({
           name: '',
           email: '',
-          phone: res.data.country_calling_code + " ",
+          code: res.data.country_calling_code + " ",
+          phone: '',
           website: '',
           budget: '',
-          services: '',
+          services: ''
         });
       })
       .catch(err => console.log(err));

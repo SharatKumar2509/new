@@ -21,7 +21,7 @@ const CaseStudies = () => {
         {
             caseStudies.map(({title,heading,description,image,bg,reverse,color,stats})=> (<CaseStudyComponent key={title} heading={heading} color={color} bg={bg} stats={stats}  description={description} reverse={reverse} image={image} />))
         }
-        <AllCaseStudyButton />
+        {/* <AllCaseStudyButton /> */}
     </section>
   )
 }

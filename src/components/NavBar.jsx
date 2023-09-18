@@ -1,8 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {  AiOutlineClose } from 'react-icons/ai';
 import QuickLinks from './NavBarLinks';
 import redlogo from "../assets/redlogo.png"
-import whitelogo from "../assets/whitelogo.png"
 import { Link } from 'react-router-dom';
 import {  FaEnvelope, FaPhoneAlt, FaSkype, FaWhatsapp } from 'react-icons/fa';
 const Navbar = () => {
@@ -13,8 +12,26 @@ const Navbar = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
+  useEffect(() => {
+    if (window.scrollY > 100) {
+      document.getElementById('mynavbar').classList.add('navbar-scrolled');
+    }
+    else {
+      document.getElementById('mynavbar').classList.remove('navbar-scrolled');
+    }
+  });
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      document.getElementById('mynavbar').classList.add('navbar-scrolled');
+    }
+    else {
+      document.getElementById('mynavbar').classList.remove('navbar-scrolled');
+    }
+  });
+
   return (
-    <nav className={`bg-transparent font-custom  fixed top-0  left-0 right-0  z-50 ${isDrawerOpen ? 'h-screen' : ''}`} style={{background: 'rgba(0, 0, 0, 0.45)'}}>
+    <nav id="mynavbar" className={`bg-transparent font-custom  fixed top-0  left-0 right-0  z-50 ${isDrawerOpen ? 'h-screen' : ''}`}>
       <div className="w-[90%] mx-auto">
         <div className="flex  h-[10vh] mt-2 mb-2 justify-between items-center">
           <div className="cursor-pointer">
@@ -22,13 +39,13 @@ const Navbar = () => {
             <img src={redlogo} className='w-40 h-auto' />
             </Link>
           </div>
-          <div className='flex gap-1 text-white items-center'>
-            <div onClick={()=> setIsDrawer2Open(true)} className=' cursor-pointer hover:bg-[#fd0202] p-2 me-3'>
+          <div className='flex gap-1 text-[#fd0202] items-center'>
+            <div onClick={()=> setIsDrawer2Open(true)} className=' cursor-pointer hover:bg-white p-2 me-3'>
               <FaPhoneAlt size={20} />
             </div>
             <button
               onClick={toggleDrawer}
-              className="text-white p-2 focus:outline-none hover:bg-[#fd0202]"
+              className="text-[#fd0202] p-2 focus:outline-none hover:bg-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,9 +93,11 @@ const Navbar = () => {
         <div className="fixed grid sm:w-[30%]   top-0 right-0 w-full h-full  bg-white">
          
   <div className="flex  h-[10vh] p-4   items-center justify-between">
-  <div >
-      <img src={redlogo} alt="Logo" className="w-32 h-auto" />
-    </div>
+  <div className="cursor-pointer">
+            <Link to={"/"}>
+            <img src={redlogo} className='w-40 h-auto' />
+            </Link>
+          </div>
     <div
       className="cursor-pointer text-red-400"
       onClick={() => setIsDrawer2Open(false)}

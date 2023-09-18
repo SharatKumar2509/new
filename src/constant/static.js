@@ -9,8 +9,6 @@ import blog3 from "../assets/asset 50.jpeg"
 export const caseStudies = [
     {
         heading:"Fintech Solution",
-        
-      
         description:"Empower your financial institution with our advanced fintech solutions. From real-time fraud detection to easy bookkeeping, our software development. ",
         image:study1,
         bg:"#cd0202",
@@ -25,98 +23,7 @@ export const caseStudies = [
             value3: "35",
           }
        
-      },
-      {
-        heading:"Industrial IoT",
-     
-        description:"Revolutionize your industry with our innovative IoT solutions. Our software development services offer connected manufacturing, pollution control..",
-        image:study2,
-        bg:"#f6f6f6",
-        color:"black",
-       reverse:"reverse",
-       stats: {
-        title1: "Increase in Reach",
-        title2: "Increase in Profit",
-        title3: "increse randam",
-        value1: "60%",
-        value2: "75%",
-        value3: "35",
       }
-      },
-      {
-        heading:"Smart Education",
-        sub:"Elevate your Education Institution",
-        tags:["Fraud detection", "Transaction categorisation", "Risk Scoring"],
-        description:"Elevate your education institution with our comprehensive software solutions. Learning management, course offerings, professional training, certification.",
-        image:study3,
-        bg:"#040D12",
-        color:"white",
-        reverse:"X",
-        stats: {
-            title1: "Increase in Reach",
-            title2: "Increase in Profit",
-            title3: "increse randam",
-            value1: "60%",
-            value2: "75%",
-            value3: "35",
-          }
-        
-      },
-    {
-      heading:"Fintech Solution",
-      
-    
-      description:"Empower your financial institution with our advanced fintech solutions. From real-time fraud detection to easy bookkeeping, our software development. ",
-      image:study1,
-      bg:"#F6F6F6",
-      color:"black",
-      reverse:"X",
-      stats: {
-        title1: "Increase in Reach",
-        title2: "Increase in Profit",
-        title3: "increse randam",
-        value1: "60%",
-        value2: "75%",
-        value3: "35",
-      }
-     
-    },
-    {
-      heading:"Industrial IoT",
-   
-      description:"Revolutionize your industry with our innovative IoT solutions. Our software development services offer connected manufacturing, pollution control..",
-      image:study2,
-      bg:"#02b5ac",
-      color:"white",
-     reverse:"reverse",
-     stats: {
-        title1: "Increase in Reach",
-        title2: "Increase in Profit",
-        title3: "increse randam",
-        value1: "60%",
-        value2: "75%",
-        value3: "35",
-      }
-    },
-    {
-      heading:"Smart Education",
-      sub:"Elevate your Education Institution",
-      tags:["Fraud detection", "Transaction categorisation", "Risk Scoring"],
-      description:"Elevate your education institution with our comprehensive software solutions. Learning management, course offerings, professional training, certification.",
-      image:study3,
-      bg:"#f6f6f6",
-      color:"black",
-      reverse:"X",
-      stats: {
-        title1: "Increase in Reach",
-        title2: "Increase in Profit",
-        title3: "increse randam",
-        value1: "60%",
-        value2: "75%",
-        value3: "35",
-      }
-      
-    }
   ]
 
 

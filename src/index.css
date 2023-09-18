@@ -24,3 +24,6 @@ body{
   background-size: 100% 100%;
 }
 
+.navbar-scrolled {
+  background: rgba(0, 0, 0, 0.45);
+}

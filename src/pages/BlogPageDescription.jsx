@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 
 const BlogPageDescription = () => {
 
-  const id = useParams();
+  const params = useParams();
 
   const [top, setTop] = useState(0);
   const [blog, setBlog] = useState({});
@@ -28,9 +28,8 @@ const BlogPageDescription = () => {
     if(top==0) {
       window.scrollTo(0,0);
       setTop(1);
-    }
     document.title = "Overninja : Welcome to a world of knowledge and innovation!";
-    axios.post("https://www.overninja.com:8081/blogs/get", { path: id })
+    axios.post("https://www.overninja.com:8081/blogs/get", { path: params.id })
 			.then(res => {
 				if (res.data.length === 0) {
 					window.location = "/blogs";
@@ -48,6 +47,7 @@ const BlogPageDescription = () => {
 				console.log(err);
 				window.location = "/Blogs";
 			});
+    }
   });
 
   const handleChange = (e) => {
