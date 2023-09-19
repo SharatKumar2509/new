@@ -9,8 +9,10 @@ const ReviewCarousel = () => {
 
   useEffect(() => {
     axios.get("https://www.overninja.com:8081/testimonials")
-			.then(res => setReviews(res.data))
-			.catch(err => console.log(err));
+      .then((res) => {
+        setReviews(res.data);
+      })
+      .catch(err => console.log(err));
   });
 
   return (
@@ -31,20 +33,21 @@ const ReviewCarousel = () => {
       infiniteLoop={true}
       className="h-full"
     >
-      {reviews.map((review, index) => (
-        <div
-          key={index}
-          className="p-4 h-auto my-5 text-white"
-          style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}
-        >
-          <div className='justify-self-start'>
-            
-            <p>{review.review}</p>
-            <h3 className='font-bold mt-14  text-xl'>{review.fullname}</h3>
-            <h2 className='font-light    text-lg' >{review.designation+", "+review.company}</h2>
+      {
+        reviews.map((review, index) => (
+          <div
+            key={index}
+            className="p-4 h-auto my-5 text-white"
+            style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}
+          >
+            <div className='justify-self-start mb-5'>
+              <p>{review.review}</p>
+              <h3 className='font-bold mt-14 text-xl'>{review.fullname}</h3>
+              <h2 className='font-light text-lg' >{review.designation+", "+review.company}</h2>
+            </div>
           </div>
-        </div>
-      ))}
+        ))
+      }
     </Carousel>
   </div>
 </div>

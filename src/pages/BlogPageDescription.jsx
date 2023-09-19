@@ -28,26 +28,27 @@ const BlogPageDescription = () => {
     if(top==0) {
       window.scrollTo(0,0);
       setTop(1);
-    document.title = "Overninja : Welcome to a world of knowledge and innovation!";
-    axios.post("https://www.overninja.com:8081/blogs/get", { path: params.id })
-			.then(res => {
-				if (res.data.length === 0) {
-					window.location = "/blogs";
-				}
-				else {
-					setBlog(res.data[0]);
-					axios.post("https://www.overninja.com:8081/blog/comment/get", { blog_id: res.data[0].id })
-						.then((res3) => {
-							setComments(res3.data);
-						})
-						.catch(err => console.log(err));
-				}
-			})
-			.catch(err => {
-				console.log(err);
-				window.location = "/Blogs";
-			});
+      document.title = "Overninja : Welcome to a world of knowledge and innovation!";
     }
+      axios.post("https://www.overninja.com:8081/blogs/get", { path: params.id })
+        .then(res => {
+          if (res.data.length === 0) {
+            window.location = "/blogs";
+          }
+          else {
+            setBlog(res.data[0]);
+            axios.post("https://www.overninja.com:8081/blog/comment/get", { blog_id: res.data[0].id })
+              .then((res3) => {
+                setComments(res3.data);
+              })
+              .catch(err => console.log(err));
+          }
+        })
+        .catch(err => {
+          console.log(err);
+          window.location = "/Blogs";
+        });
+    
   });
 
   const handleChange = (e) => {
@@ -98,9 +99,9 @@ const BlogPageDescription = () => {
     if(status2==0) {
       setStatus2(1);
       var f = formData;
-      f['blog_id'] = blog.id;
+      f.blog_id = blog.id;
       setFormData(f);
-      axios.post("https://www.overninja.com:8081/blog/comment/add", formData)
+      axios.post("https://www.overninja.com:8081/blog/comment/add", f)
 				.then(() => {
 					setStatus2(2);
           setTimeout(() => {
@@ -123,7 +124,6 @@ const BlogPageDescription = () => {
     <div className="w-screen font-custom mt-10 py-24">
       <div className="w-[90%] sm:w-[70%]  mx-auto">
         <img src={"https://www.overninja.com/uploads/blogs/" + blog.blog_image} className="w-[100%]" alt="blog img" />
-
         <div className="my-6">
           <h1 className="text-3xl font-semibold">{blog.title}</h1>
           <p className="text-gray-600 mt-4">By {blog.author}</p>

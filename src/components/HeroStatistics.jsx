@@ -7,20 +7,20 @@ const HeroStatistics = ({ clip }) => {
 
   const [statistics, setStatistics] = useState([
     {
-      "title": "Satisfied Clients",
-      "value": "50+",
+      "title": "",
+      "value": "",
     },
     {
-      "title": "Campaign managed",
-      "value": "100+",
+      "title": "",
+      "value": "",
     },
     {
-      "title": "Revenue Generated",
-      "value": "1M+",
+      "title": "",
+      "value": "",
     },
     {
-      "title": "Client Retention",
-      "value": "100%",
+      "title": "",
+      "value": "",
     }
   ]);
 

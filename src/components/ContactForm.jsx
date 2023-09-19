@@ -29,6 +29,7 @@ const ContactForm = () => {
     e.preventDefault();
     if(status==0) {
       setStatus(1);
+
       axios.post("https://www.overninja.com:8081/contact", formData)
 				.then(() => {
 					setStatus(2);
@@ -38,41 +39,33 @@ const ContactForm = () => {
 					setStatus(0);
 				});
 
+      var f = formData;
+      
+      setFormData({
+        name: '',
+        email: '',
+        code: f.code,
+        phone: '',
+        website: '',
+        budget: '',
+        services: ''
+      });
+
       setTimeout(() => {
         setStatus(2);
         setTimeout(() => {
           setStatus(0);
         }, 3000);
       }, 3000);
-
-      axios.get("https://ipapi.co/json")
-        .then(res => {
-          setFormData({
-            name: '',
-            email: '',
-            code: res.data.country_calling_code + " ",
-            phone: '',
-            website: '',
-            budget: '',
-            services: ''
-          });
-        })
-        .catch(err => console.log(err));
     }
   };
 
   useEffect(() => {
     axios.get("https://ipapi.co/json")
       .then(res => {
-        setFormData({
-          name: '',
-          email: '',
-          code: res.data.country_calling_code + " ",
-          phone: '',
-          website: '',
-          budget: '',
-          services: ''
-        });
+        var f = formData;
+        f.code = res.data.country_calling_code;
+        setFormData(f);
       })
       .catch(err => console.log(err));
   });
