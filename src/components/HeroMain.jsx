@@ -14,7 +14,7 @@ const HeroMain = ({clip,btn,heading}) => {
           muted
           className="object-cover w-full h-full"
         /> */}
-        <img src={clip} className="object-cover w-full h-full" />
+        <img src={clip} className="object-cover w-full h-full" style={{objectPosition: 'bottom center'}} />
       </div>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       

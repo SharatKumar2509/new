@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import axios from 'axios'
 
 // import caseStudyheroclip from "../assets/casestudyhero.mp4"
-import caseStudyheroclip from "../assets/8.jpg"
+import caseStudyheroclip from "../assets/7.webp"
 import CaseStudyComponent from '../components/CaseStudyComponent'
 import HeroMain from '../components/HeroMain'
 

@@ -1,5 +1,5 @@
 // import clip from "../assets/homepageinside.mp4" 
-import clip from "../assets/2.jpg"
+import clip from "../assets/2.webp"
 import { Link } from 'react-router-dom'
 const HomeInsideHero = () => {
   return (
