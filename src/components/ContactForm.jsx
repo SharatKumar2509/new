@@ -6,6 +6,7 @@ import {BiLoaderCircle} from "react-icons/bi";
 const ContactForm = () => {
 
   const [status, setStatus] = useState(0);
+  const [first, setFirst] = useState(0);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -61,13 +62,16 @@ const ContactForm = () => {
   };
 
   useEffect(() => {
-    axios.get("https://ipapi.co/json")
-      .then(res => {
-        var f = formData;
-        f.code = res.data.country_calling_code;
-        setFormData(f);
-      })
-      .catch(err => console.log(err));
+    if(first==0) {
+      setFirst(1);
+      axios.get("https://ipapi.co/json")
+        .then(res => {
+          var f = formData;
+          f.code = res.data.country_calling_code;
+          setFormData(f);
+        })
+        .catch(err => console.log(err));
+    }
   });
 
   return (

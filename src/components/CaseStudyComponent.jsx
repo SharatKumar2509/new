@@ -61,19 +61,19 @@ const CaseStudyComponent = ({item, count}) => {
             </div>
             <div className="text-center">
               <p className="text-3xl font-bold">{
-                item.value1
+                item.value2
               }</p>
               <p className="text-lg">{
-                item.title1
+                item.title2
               }
               </p>
             </div>
             <div className="text-center">
               <p className="text-3xl font-bold">{
-                item.value1
+                item.value3
               }</p>
               <p className="text-lg">{
-                item.title1
+                item.title3
               }
               </p>
             </div>

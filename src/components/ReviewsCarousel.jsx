@@ -22,33 +22,38 @@ const ReviewCarousel = () => {
     <h2 className='text-white text-center font-bold sm:text-5xl text-3xl'>&quot;What our clients say&quot;</h2>
   </div>
   <div className="sm:w-1/2 w-full px-4">
-    <Carousel
-      stopOnHover={false}
-      autoPlay={true}
-      showIndicators={true}
-      showStatus={false}
-      showArrows={false}
-      showThumbs={false}
-      interval={2000}
-      infiniteLoop={true}
-      className="h-full"
-    >
-      {
-        reviews.map((review, index) => (
-          <div
-            key={index}
-            className="p-4 h-auto my-5 text-white"
-            style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}
-          >
-            <div className='justify-self-start mb-5'>
-              <p>{review.review}</p>
-              <h3 className='font-bold mt-14 text-xl'>{review.fullname}</h3>
-              <h2 className='font-light text-lg' >{review.designation+", "+review.company}</h2>
-            </div>
-          </div>
-        ))
-      }
-    </Carousel>
+    {
+      (reviews.length>0) ? (
+        <Carousel
+          stopOnHover={false}
+          autoPlay={true}
+          autoFocus={true}
+          showIndicators={true}
+          showStatus={false}
+          showArrows={false}
+          showThumbs={false}
+          interval={2000}
+          infiniteLoop={true}
+          className="h-full"
+        >
+          {
+            reviews.map((review, index) => (
+              <div
+                key={index}
+                className="p-4 h-auto my-5 text-white"
+                style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}
+              >
+                <div className='justify-self-start mb-4'>
+                  <p>{review.review}</p>
+                  <h3 className='font-bold mt-14 text-xl'>{review.fullname}</h3>
+                  <h2 className='font-light text-lg' >{review.designation+", "+review.company}</h2>
+                </div>
+              </div>
+            ))
+          }
+        </Carousel>
+      ) : (<></>)
+    }
   </div>
 </div>
 
