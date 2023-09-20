@@ -42,12 +42,12 @@ const CaseStudyComponent = ({item, count}) => {
   return (
     <div style={{ backgroundColor: settings[count].background }} className={settings[count].classval}>
       <div className="w-full my-auto">
-        <img className="w-full " src={"https://www.overninja.com/uploads/portfolio/"+item.project_image_1} alt={item.client} />
+        <img className="w-full" style={{width: '100%', height: 'auto', aspectRatio: '14/9', objectFit: 'cover', borderRadius: '15px'}} src={"https://www.overninja.com/uploads/portfolio/"+item.project_image_1} alt={item.client} />
       </div>
       <div className={`w-full text-${settings[count].color} my-auto`}>
-        <h2 className="text-5xl tracking-wider font-semibold">{item.client}</h2>
+        <h2 className="text-5xl tracking-wider font-semibold mb-10">{item.client}</h2>
 
-        <p className=" mt-5">{item.introduction}</p>
+        <p className="mb-10">{item.benefits}</p>
         <div className="w-full my-5 ">
         <div className="flex w-full lg:w-[85%] justify-between mb-4">
             <div className="text-center">

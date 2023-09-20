@@ -1,8 +1,12 @@
-import {useEffect} from 'react'
+import React,{Suspense, useEffect} from 'react'
 // import clip1 from "../assets/homepagehero.mp4"
+
+const LazyReviewCarousel = React.lazy(() => import('../components/ReviewsCarousel'));
+const LazyHeroBlog = React.lazy(() => import('../components/HeroBlog'));
+
 import clip1 from "../assets/1.webp"
 
-import ReviewCarousel from '../components/ReviewsCarousel'
+
 import HeroQuote from '../components/HeroQuote'
 
 import TwoEqualSections from '../components/TwoSections'
@@ -10,14 +14,15 @@ import TwoEqualSections from '../components/TwoSections'
 import logo1 from "../assets/icon4.png"
 import logo2 from "../assets/icon6.png"
 import HomeInsideHero from '../components/HomeInsideHero'
-import HeroBlog from '../components/HeroBlog'
+
 import HeroMain from '../components/HeroMain'
+import SpinnerComponent from './SpinnerComponent';
 const Home = () => {
 
   useEffect(() => {
     window.scrollTo(0,0);
     document.title = "Overninja: Your Gateway to Limitless Possibilities";
-  });
+  },[]);
 
   return (
    
@@ -39,9 +44,13 @@ const Home = () => {
     
    <HomeInsideHero    />
    <HeroQuote />
-   <ReviewCarousel />
-   
-    <HeroBlog />
+   <Suspense fallback={<SpinnerComponent />}>
+        <LazyReviewCarousel />
+      </Suspense>
+      
+      <Suspense fallback={<SpinnerComponent />}>
+        <LazyHeroBlog />
+      </Suspense>
    
     
 </section>

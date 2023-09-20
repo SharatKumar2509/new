@@ -16,22 +16,19 @@ const Trustedcarousel = () => {
     {
       company1:company1,
       company2:company2,
-      company3:company4
-      
-      
+      company3:company4,
+      company4:company3
     },
     {
       company1:company1,
       company2:company2,
-      company3:company5
-      
-      
+      company3:company5,
+      company4:company4
     },  {
       company1:company1,
       company2:company3,
-      company3:company6
-      
-      
+      company3:company6,
+      company4:company2
     }
     
     
@@ -65,6 +62,9 @@ const Trustedcarousel = () => {
       </div>
       <div className="w-full">
         <img className='w-full' src={item.company3} alt="Company 2" />
+      </div>
+      <div className="w-full">
+        <img className='w-full' src={item.company4} alt="Company 2" />
       </div>
     </div>
   ))}

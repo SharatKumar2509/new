@@ -22,7 +22,7 @@ const BlogsPage = () => {
     })
     .catch(err => console.log(err));
   }
-  });
+  },[]);
 
   const showMore = () => {
     var s = blogs2.length;
