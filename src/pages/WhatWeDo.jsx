@@ -1,7 +1,8 @@
 import {useEffect} from 'react'
 import { servicesData } from '../constant/static'
 import TwoServices from '../components/TwoServices'
-import service from "../assets/whatwedohero.mp4"
+// import service from "../assets/whatwedohero.mp4"
+import service from "../assets/6.jpg"
 
 import HeroMain from '../components/HeroMain'
 

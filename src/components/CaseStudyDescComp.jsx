@@ -5,7 +5,7 @@ const CaseStudyDescComp = ({ item }) => {
     <>
       <div style={{ backgroundColor: '#cd0202' }} className={`bg-#cd0202! gap-5 sm:gap-10 min-h-screen flex-col shadow-md p-4  flex  md:flex-row-reverse`}>
         <div className="w-full my-auto">
-          <img className='w-full ' src={"https://www.overninja.com/uploads/portfolio/" + item.project_image_1} alt={item.client} />
+          <img className='w-full ' style={{width: '100%', height: 'auto', aspectRatio: '14/9', objectFit: 'cover', borderRadius: '15px'}} src={"https://www.overninja.com/uploads/portfolio/" + item.project_image_1} alt={item.client} />
         </div>
         <div className={`w-full text-white my-auto`}>
           <h2 className="text-5xl tracking-wider font-semibold">Client Requirement</h2>
@@ -14,7 +14,7 @@ const CaseStudyDescComp = ({ item }) => {
       </div>
       <div style={{ backgroundColor: '#f6f6f6' }} className={`bg-#f6f6f6! gap-5 sm:gap-10 min-h-screen flex-col shadow-md p-4  flex  md:flex-row`}>
         <div className="w-full my-auto">
-          <img className='w-full ' src={"https://www.overninja.com/uploads/portfolio/" + item.project_image_2} alt={item.client} />
+          <img className='w-full ' style={{width: '100%', height: 'auto', aspectRatio: '14/9', objectFit: 'cover', borderRadius: '15px'}} src={"https://www.overninja.com/uploads/portfolio/" + item.project_image_2} alt={item.client} />
         </div>
         <div className={`w-full text-black my-auto`}>
           <h2 className="text-5xl tracking-wider font-semibold">The Challenge</h2>
@@ -23,7 +23,7 @@ const CaseStudyDescComp = ({ item }) => {
       </div>
       <div style={{ backgroundColor: '#040D12' }} className={`bg-#040D12! gap-5 sm:gap-10 min-h-screen flex-col shadow-md p-4  flex  md:flex-row-reverse`}>
         <div className="w-full my-auto">
-          <img className='w-full ' src={"https://www.overninja.com/uploads/portfolio/" + item.project_image_3} alt={item.client} />
+          <img className='w-full ' style={{width: '100%', height: 'auto', aspectRatio: '14/9', objectFit: 'cover', borderRadius: '15px'}} src={"https://www.overninja.com/uploads/portfolio/" + item.project_image_3} alt={item.client} />
         </div>
         <div className={`w-full text-white my-auto`}>
           <h2 className="text-5xl tracking-wider font-semibold">The Process</h2>
@@ -32,7 +32,7 @@ const CaseStudyDescComp = ({ item }) => {
       </div>
       <div style={{ backgroundColor: '#f6f6f6' }} className={`bg-#f6f6f6! gap-5 sm:gap-10 min-h-screen flex-col shadow-md p-4  flex  md:flex-row`}>
         <div className="w-full my-auto">
-          <img className='w-full ' src={"https://www.overninja.com/uploads/portfolio/" + item.project_image_4} alt={item.client} />
+          <img className='w-full ' style={{width: '100%', height: 'auto', aspectRatio: '14/9', objectFit: 'cover', borderRadius: '15px'}} src={"https://www.overninja.com/uploads/portfolio/" + item.project_image_4} alt={item.client} />
         </div>
         <div className={`w-full text-black my-auto`}>
           <h2 className="text-5xl tracking-wider font-semibold">The Results</h2>
@@ -41,7 +41,7 @@ const CaseStudyDescComp = ({ item }) => {
       </div>
       <div style={{ backgroundColor: '#02b5ac' }} className={`bg-#02b5ac! gap-5 sm:gap-10 min-h-screen flex-col shadow-md p-4  flex  md:flex-row-reverse`}>
         <div className="w-full my-auto">
-          <img className='w-full ' src={"https://www.overninja.com/uploads/portfolio/" + item.project_image_5} alt={item.client} />
+          <img className='w-full ' style={{width: '100%', height: 'auto', aspectRatio: '14/9', objectFit: 'cover', borderRadius: '15px'}} src={"https://www.overninja.com/uploads/portfolio/" + item.project_image_5} alt={item.client} />
         </div>
         <div className={`w-full text-white my-auto`}>
           <h2 className="text-5xl tracking-wider font-semibold mb-10">Numbers Show Proof</h2>

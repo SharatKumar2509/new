@@ -6,13 +6,15 @@ const HeroMain = ({clip,btn,heading}) => {
    
     <div className="relative font-custom h-screen">
       <div className="absolute top-0 left-0 w-full h-full">
-        <video
+        {/* <video
           src={clip}
           autoPlay
+          autobuffer="true"
           loop
           muted
           className="object-cover w-full h-full"
-        />
+        /> */}
+        <img src={clip} className="object-cover w-full h-full" />
       </div>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       

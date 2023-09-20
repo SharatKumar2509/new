@@ -1,7 +1,4 @@
 
-import React from 'react';
-
-
 function VideoSections({clip,heading,description,reverse}) {
     
       
@@ -14,7 +11,8 @@ function VideoSections({clip,heading,description,reverse}) {
 
     <div className="relative block sm:hidden w-screen h-screen overflow-hidden">
   {/* Video Background */}
-  <video src={clip} autoPlay loop muted className="object-cover w-full h-full" />
+  {/* <video src={clip} autoPlay loop muted className="object-cover w-full h-full" /> */}
+  <img src={clip} className="object-cover w-full h-full" />
   <div className="absolute inset-0 bg-black opacity-60"></div>
   {/* Content */}
   <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -36,13 +34,14 @@ function VideoSections({clip,heading,description,reverse}) {
 
         {/* desktop */}
         <div  className={`w-full relative  h-screen overflow-hidden  `}>
-        <video
+        {/* <video
           src={clip}
           autoPlay
           loop
           muted
           className="object-cover  h-full"
-        />
+        /> */}
+        <img src={clip} className="object-cover w-full h-full" />
              <div className="absolute inset-0 bg-black opacity-60"></div>
         </div>
        

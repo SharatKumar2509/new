@@ -1,8 +1,13 @@
 import { useEffect } from "react"
 
-import clip2 from "../assets/whoweareinside1.mp4"
-import clip3 from "../assets/whoweareinside2.mp4"
-import clip1 from "../assets/whowearehero.mp4"
+// import clip2 from "../assets/whoweareinside1.mp4"
+// import clip3 from "../assets/whoweareinside2.mp4"
+// import clip1 from "../assets/whowearehero.mp4"
+
+import clip1 from "../assets/3.jpg";
+import clip2 from "../assets/4.jpg";
+import clip3 from "../assets/5.jpg";
+
 import logo2 from "../assets/icon5.png"
 
 import VideoSections from '../components/VideoSections'

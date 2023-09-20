@@ -1,5 +1,6 @@
 import {useEffect} from 'react'
-import clip1 from "../assets/homepagehero.mp4"
+// import clip1 from "../assets/homepagehero.mp4"
+import clip1 from "../assets/1.jpg"
 
 import ReviewCarousel from '../components/ReviewsCarousel'
 import HeroQuote from '../components/HeroQuote'
