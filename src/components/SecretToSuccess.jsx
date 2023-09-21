@@ -20,12 +20,12 @@ const data= [
   
 const SecretToSuccess = () => {
   return (
-    <div className='h-screen py-10 font-custom flex gap-10 flex-col  items-center justify-center bg-[#fd0202]'>
+    <div className='h-auto md:h-screen py-10 font-custom flex gap-10 flex-col  items-center justify-center bg-[#fd0202]'>
        
         
-        <h2 className='font-bold text-center text-white text-5xl'>The secrets to our success</h2>
+        <h2 className='font-bold text-center text-white text-5xl mb-10'>The secrets to our success</h2>
 
-        <div className="grid w-[90%] sm:w-[80%] mx-auto grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="grid w-[90%] sm:w-[80%] mx-auto grid-cols-1 sm:grid-cols-2 gap-20">
           {
             data.map((secret)=>(<div className="flex   flex-col gap-2">
             <h1 className="text-3xl font-semibold text-white">{secret.heading}</h1>

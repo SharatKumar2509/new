@@ -601,8 +601,24 @@ export const pricingWebsiteAudit = [{
       },
     ],
   }]
-} ,{
-  main:"6) Reports",
+} ,
+{
+  main:"6) Content",
+  sub:[  {
+    title: "",
+    data: [
+      {
+        subtitle: "Blog",
+        values: ["2 Blogs / month", "5 Blogs / month", "10 Blogs / month","20 Blogs / month"],
+      },
+      {
+        subtitle: "Article",
+        values: ["2 Articles / month", "5 Articles / month", "10 Articles / month","20 Articles / month"],
+      }
+    ]
+  },]
+},{
+  main:"7) Reports",
   sub:[  {
     title: "User Behaviour Analysis",
     data: [
@@ -635,22 +651,6 @@ export const pricingWebsiteAudit = [{
         values: ["X", "✓", "✓","✓"],
       }
     ],
-  },]
-},
-{
-  main:"7) Content",
-  sub:[  {
-    title: "",
-    data: [
-      {
-        subtitle: "Blog",
-        values: ["2 Blogs / month", "5 Blogs / month", "10 Blogs / month","20 Blogs / month"],
-      },
-      {
-        subtitle: "Article",
-        values: ["2 Articles / month", "5 Articles / month", "10 Articles / month","20 Articles / month"],
-      }
-    ]
   },]
 }
 

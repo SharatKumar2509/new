@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom'
 
-const HeroMain = ({clip,btn,heading}) => {
+const HeroMain = ({clip,btn,heading,bg}) => {
   return (
     <div className="relative font-custom h-screen">
-      <div className="absolute top-0 left-0 w-full h-full" style={{background: 'linear-gradient(to right, #333333, #dd1818)'}}>
+      <div className="absolute top-0 left-0 w-full h-full" style={bg}>
         {/* <video
           src={clip}
           autoPlay

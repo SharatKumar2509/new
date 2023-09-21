@@ -9,7 +9,7 @@ function VideoSections({heading,description,reverse,bg}) {
     {/* mobile */}
 
 
-    <div className="relative block sm:hidden w-screen h-screen overflow-hidden">
+    <div className="relative block sm:hidden w-screen h-screen overflow-hidden" style={bg}>
   {/* Video Background */}
   {/* <video src={clip} autoPlay loop muted className="object-cover w-full h-full" /> */}
   {/* <img src={clip} className="object-cover w-full h-full" /> */}

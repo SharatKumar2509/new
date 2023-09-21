@@ -11,11 +11,31 @@ const Trustedcarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000, 
-    slidesToShow: 4, 
+    speed: 1000,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   };
 
   useEffect(() => {
@@ -30,18 +50,18 @@ const Trustedcarousel = () => {
   }, []);
 
   return (
-    <div className="font-custom flex-col justify-center items-center sm:py-5  flex h-screen py-10 gap-10  ">
+    <div className="font-custom flex-col justify-center items-center sm:py-5 flex h-screen py-10 gap-10  ">
       <div className="w-full flex justify-center items-center px-4">
         <h2 className='text-black text-center font-bold sm:text-5xl text-3xl'>Trusted by Leading Companies</h2>
       </div>
       <div className="w-full px-4">
         {
-          (logos.length>0) ? (
+          (logos.length > 0) ? (
             <Slider {...settings}>
               {logos.map((item, index) => (
                 <div key={index} className="p-4 w-full h-auto gap-5 flex my-5 text-white">
                   <div className="w-full">
-                    <img className='w-full' src={"https://www.overninja.com/uploads/brands/"+item.logo} alt={item.company} style={{aspectRatio: '5/1', objectFit: 'contain'}} />
+                    <img className='w-full' src={"https://www.overninja.com/uploads/brands/" + item.logo} alt={item.company} style={{ aspectRatio: '5/1', objectFit: 'contain' }} />
                   </div>
                 </div>
               ))}
