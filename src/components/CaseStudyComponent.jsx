@@ -49,12 +49,12 @@ const CaseStudyComponent = ({item, count}) => {
 
         <p className="mb-10">{item.benefits}</p>
         <div className="w-full my-5 ">
-        <div className="flex w-full lg:w-[85%] justify-between mb-4">
+        <div className="flex w-full justify-between mb-4">
             <div className="text-center">
               <p className="text-3xl font-bold">{
                 item.value1
               }</p>
-              <p className="text-lg">{
+              <p className="text-md">{
                 item.title1
               }
               </p>
@@ -63,7 +63,7 @@ const CaseStudyComponent = ({item, count}) => {
               <p className="text-3xl font-bold">{
                 item.value2
               }</p>
-              <p className="text-lg">{
+              <p className="text-md">{
                 item.title2
               }
               </p>
@@ -72,7 +72,7 @@ const CaseStudyComponent = ({item, count}) => {
               <p className="text-3xl font-bold">{
                 item.value3
               }</p>
-              <p className="text-lg">{
+              <p className="text-md">{
                 item.title3
               }
               </p>

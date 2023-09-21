@@ -4,9 +4,9 @@ import { useEffect } from "react"
 // import clip3 from "../assets/whoweareinside2.mp4"
 // import clip1 from "../assets/whowearehero.mp4"
 
-import clip1 from "../assets/3.webp";
-import clip2 from "../assets/4.webp";
-import clip3 from "../assets/5.webp";
+// import clip1 from "../assets/3.webp";
+// import clip2 from "../assets/4.webp";
+// import clip3 from "../assets/5.webp";
 
 import logo2 from "../assets/icon5.png"
 
@@ -26,15 +26,13 @@ const WhoWeAre = () => {
   return (
     <section className="overflow-hidden">
    
-    <HeroStatistics clip={clip1} />
+    <HeroStatistics />
     <VideoSections description={"We bring real solutions to each client’s problems through a deep understanding of their market, solution, and vision."} heading={"We are a dedicated team of marketing experts helping startups to enterprises"} 
-    
-    clip={clip2}
     reverse={""}
+    bg={{background: 'linear-gradient(to right, #0f0c29, #302b63, #24243e)'}}
      />
      <VideoSections logo={logo2} description={"We consistently stay ahead of the curve by incorporating the latest trends and technologies."} heading={"We offer a success guarantee and have 100% client retention ratio"} 
-     clip={clip3}
-    
+    bg={{background: 'linear-gradient(to right, #093028, #237A57)'}}
     reverse={"flex-row-reverse"}
      />
     

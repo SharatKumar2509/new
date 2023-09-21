@@ -39,13 +39,13 @@ const Navbar = () => {
             <img src={redlogo} className='w-40 h-auto' />
             </Link>
           </div>
-          <div className='flex gap-1 text-[#fd0202] items-center'>
-            <div onClick={()=> setIsDrawer2Open(true)} className=' cursor-pointer hover:bg-white p-2 me-3'>
+          <div className='flex gap-1 text-dark items-center'>
+            <div onClick={()=> setIsDrawer2Open(true)} className='toggle-btn cursor-pointer hover:bg-white hover:text-[#fd0202] p-2 me-3'>
               <FaPhoneAlt size={20} />
             </div>
             <button
               onClick={toggleDrawer}
-              className="text-[#fd0202] p-2 focus:outline-none hover:bg-white"
+              className="toggle-btn text-dark p-2 focus:outline-none hover:bg-white hover:text-[#fd0202]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

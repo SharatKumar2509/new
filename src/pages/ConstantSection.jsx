@@ -6,7 +6,7 @@ const ConstantSection = () => {
   return (
    <>
     <Navbar />
-    <Outlet />
+      <Outlet />
     <Footer />
    </>
   )

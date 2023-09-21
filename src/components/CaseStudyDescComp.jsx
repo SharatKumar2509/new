@@ -45,12 +45,12 @@ const CaseStudyDescComp = ({ item }) => {
         </div>
         <div className={`w-full text-white my-auto`}>
           <h2 className="text-5xl tracking-wider font-semibold mb-10">Numbers Show Proof</h2>
-          <div className="flex w-full lg:w-[85%] justify-between mb-4">
+          <div className="flex w-full justify-between mb-4">
             <div className="text-center">
               <p className="text-3xl font-bold">{
                 item.value1
               }</p>
-              <p className="text-lg">{
+              <p className="text-md">{
                 item.title1
               }
               </p>
@@ -59,7 +59,7 @@ const CaseStudyDescComp = ({ item }) => {
               <p className="text-3xl font-bold">{
                 item.value2
               }</p>
-              <p className="text-lg">{
+              <p className="text-md">{
                 item.title2
               }
               </p>
@@ -68,7 +68,7 @@ const CaseStudyDescComp = ({ item }) => {
               <p className="text-3xl font-bold">{
                 item.value3
               }</p>
-              <p className="text-lg">{
+              <p className="text-md">{
                 item.title3
               }
               </p>

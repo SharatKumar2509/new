@@ -3,7 +3,7 @@ import StatComponent from "./StatComponent";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const HeroStatistics = ({ clip }) => {
+const HeroStatistics = () => {
 
   const [statistics, setStatistics] = useState([
     {
@@ -53,7 +53,7 @@ const HeroStatistics = ({ clip }) => {
 
   return (
     <div className="relative font-custom h-screen">
-      <div className="absolute top-0 left-0 w-full h-full">
+      <div className="absolute top-0 left-0 w-full h-full" style={{background: 'linear-gradient(to right, #333333, #dd1818)'}}>
         {/* <video
           src={clip}
           autoPlay
@@ -61,9 +61,9 @@ const HeroStatistics = ({ clip }) => {
           muted
           className="object-cover w-full h-full"
         /> */}
-        <img src={clip} className="object-cover w-full h-full" />
+        {/* <img src={clip} className="object-cover w-full h-full" /> */}
       </div>
-      <div className="absolute inset-0 bg-black opacity-60"></div>
+      {/* <div className="absolute inset-0 bg-black opacity-60"></div> */}
 
       <div className="absolute  inset-0 flex flex-col items-center">
         <div className="w-[80%] sm:w-[70%] h-auto my-auto sm:flex-row flex-col   items-start justify-center">

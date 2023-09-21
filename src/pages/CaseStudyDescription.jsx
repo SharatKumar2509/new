@@ -50,12 +50,6 @@ const CaseStudyDescription = () => {
             {caseStudy.client}
           </h1>
           <p className="text-white lg:w-[75%] my-4" style={{fontSize: "1.1em"}}>{caseStudy.introduction}</p>
-          <Link to="/GetAFreeQuote"><span
-            className="mt-10 inline-block px-4 py-2 border border-[#fd0202] text-[#f4f4f4] rounded hover:bg-white hover:text-[#fd0202] transition duration-300 ease-in-out"
-          >
-            Get a free quote
-          </span>
-          </Link>
         </div>
       </div>
       <CaseStudyDescComp key={caseStudy.id} item={caseStudy} />
