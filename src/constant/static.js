@@ -665,28 +665,40 @@ export const perPrice =[
   {
     "title": "Ad Spend",
     "price": "$1,000 or 10% of your budget, whichever is greater",
-    "background": "#f4f4f4",
-    "color":"black"
+    "background": "[#3f2caa]",
+    "color":"white"
     
   },
   {
     "title": "Content Writing or Blog",
     "price": "$25 per 500 words",
-    "background": "#cd0202",
+    "background": "[#cd0202]",
     "color":"white"
   },
   {
     "title": "SEO",
     "price": "$500 to $10,000 or more",
-    "background": "#cd0202",
+    "background": "[#013220]",
     "color":"white"
     
   },
   {
     "title": "Per Hour",
     "price": "$25 per hour",
-    "background": "#f4f4f4",
-    "color":"black"
+    "background": "black",
+    "color":"white"
+  },
+  {
+    "title": "PPC Ads Management",
+    "price": "$500",
+    "background": "orange",
+    "color": "black"
+  },
+  {
+    "title": "Social Media Management",
+    "price": "$500",
+    "background": "limegreen",
+    "color": "black"
   }
 ]
 

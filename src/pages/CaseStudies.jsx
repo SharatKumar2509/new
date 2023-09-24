@@ -26,7 +26,7 @@ const CaseStudies = () => {
 
   return (
     <section className="overflow-hidden font-custom">
-       <HeroMain heading={"Dive into case studies that highlight our expertise and commitment"} btn={"Get a free quote"} clip={caseStudyheroclip} bg={{background: 'linear-gradient(to right, #061161, #780206)'}} />
+       <HeroMain heading={"Dive into case studies that highlight our expertise and commitment"} btn={"Get a free quote"} clip={caseStudyheroclip} bg={{background: 'linear-gradient(to right, #1f4037, #99f2c8)'}} />
         {
           caseStudies.map((item, index) => ( <CaseStudyComponent key={item.id} item={item} count={index} /> ))
         }

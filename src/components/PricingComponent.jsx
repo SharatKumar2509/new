@@ -1,19 +1,50 @@
-import React from 'react';
-import { perPrice } from '../constant/static';
-
-
 const PricingComponent = () => {
   return (
     <div className="grid sm:grid-cols-2 font-custom grid-cols-1 gap-4">
-      {perPrice.map((item, index) => (
-        <div
-          key={index}
-          className={`bg-[${item.background}] flex flex-col justify-center items-center h-[20vh] py-2 px-2 rounded-lg shadow-md text-${item.color}  text-center`}
-        >
-          <h2 className="sm:text-2xl text-xl font-semibold">{item.title}</h2>
-          <p>{item.price}</p>
-        </div>
-      ))}
+      <div
+        className={`bg-[#3f2caa] flex flex-col justify-center items-center h-[20vh] py-2 px-2 rounded-lg shadow-md text-white  text-center`}
+      >
+        <h2 className="sm:text-2xl text-xl font-semibold">Ad Spend</h2>
+        <p>$1,000 or 10% of your budget, whichever is greater</p>
+      </div>
+
+      <div
+        className={`bg-[#cd0202] flex flex-col justify-center items-center h-[20vh] py-2 px-2 rounded-lg shadow-md text-white  text-center`}
+      >
+        <h2 className="sm:text-2xl text-xl font-semibold">Content Writing or Blog</h2>
+        <p>$25 per 500 words</p>
+      </div>
+
+      <div
+        className={`bg-[#013220] flex flex-col justify-center items-center h-[20vh] py-2 px-2 rounded-lg shadow-md text-white  text-center`}
+      >
+        <h2 className="sm:text-2xl text-xl font-semibold">SEO</h2>
+        <p>$500 to $10,000 or more</p>
+      </div>
+
+      <div
+        className={`bg-black flex flex-col justify-center items-center h-[20vh] py-2 px-2 rounded-lg shadow-md text-white  text-center`}
+      >
+        <h2 className="sm:text-2xl text-xl font-semibold">Per Hour</h2>
+        <p>$25 per hour</p>
+      </div>
+
+      <div
+        className={`flex flex-col justify-center items-center h-[20vh] py-2 px-2 rounded-lg shadow-md text-black  text-center`}
+        style={{backgroundColor: 'orange'}}
+      >
+        <h2 className="sm:text-2xl text-xl font-semibold">PPC Ads Management</h2>
+        <p>$500</p>
+      </div>
+
+      <div
+        className={`flex flex-col justify-center items-center h-[20vh] py-2 px-2 rounded-lg shadow-md text-black  text-center`}
+        style={{backgroundColor: 'limegreen'}}
+      >
+        <h2 className="sm:text-2xl text-xl font-semibold">Social Media Management</h2>
+        <p>$500</p>
+      </div>
+
     </div>
   );
 };
