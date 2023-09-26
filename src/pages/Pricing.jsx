@@ -32,25 +32,25 @@ const Pricing = () => {
                 <th className="p-2 text-white bg-[#3f2caa]  border">
                   <span>
                     <p>Basic</p>
-                    <p className="">$1500 / month</p>
+                    <p className="">$750 / month</p>
                   </span>
                 </th>
                 <th className="p-2  text-white bg-[#cd0202]   border">
                   <span>
                     <p>Pro</p>
-                    <p>$3000 / month</p>
+                    <p>$1500 / month</p>
                   </span>
                 </th>
                 <th className="p-2  bg-[#013220] text-white border">
                   <span>
                     <p>Growth</p>
-                    <p className="">$5000 / month</p>
+                    <p className="">$3000 / month</p>
                   </span>
                 </th>
                 <th className="p-2 text-white bg-black border">
                   <span>
                     <p>Enterprise</p>
-                    <p className="text-white">$10000 / month</p>
+                    <p className="text-white">$5000 / month</p>
                   </span>
                 </th>
               </tr>

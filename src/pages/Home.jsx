@@ -28,7 +28,7 @@ const Home = () => {
    
     <section className="overflow-hidden font-custom">
    
-    <HeroMain heading={"Boost your sales to new heights with our digital marketing services"} btn={"Get a free quote"} clip={clip1} bg={{background: 'linear-gradient(to right, #3f2b96, #a8c0ff)'}} />
+    <HeroMain heading={"Boost your sales to new heights with our digital marketing services"} btn={"Get a free quote"} clip={clip1} bg={{background: 'linear-gradient(to right, #000328, #00458e)'}} />
     <TwoEqualSections logo={logo1} description={"We are focused on helping brands grow through digital transformation services. We bring real solutions to each client’s problems through a deep understanding of their market, solution, and vision."} heading={"Work with top-notch talent to scale your revenue"} 
     btn={"Our Company"}
     color={"#fd0202"}

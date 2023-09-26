@@ -53,7 +53,7 @@ const HeroStatistics = () => {
 
   return (
     <div className="relative font-custom h-screen">
-      <div className="absolute top-0 left-0 w-full h-full" style={{background: 'linear-gradient(to right, #000046, #1CB5E0)'}}>
+      <div className="absolute top-0 left-0 w-full h-full" style={{background: 'linear-gradient(to right, #1f0021, #751006)'}}>
         {/* <video
           src={clip}
           autoPlay

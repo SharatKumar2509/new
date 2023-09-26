@@ -16,7 +16,7 @@ const WhatWeDo = () => {
     
   return (
     <section className="overflow-hidden">
-        <HeroMain heading={"We pour our heart and soul into crafting powerful campaigns "} btn={"Get a free quote"} clip={service} bg={{background: 'linear-gradient(to right, #0F2027, #203A43, #2C5364)'}} />
+        <HeroMain heading={"We pour our heart and soul into crafting powerful campaigns "} btn={"Get a free quote"} clip={service} bg={{background: 'linear-gradient(to right, #f97d5b, #f9a87b)'}} />
        
      {servicesData.map((item, index) => (
         <TwoServices key={index} heading1={item.heading1} heading2={item.heading2} description1={item.description1} description2={item.description2} color={item.color} background={item.background} reverse={item.reverse} />
