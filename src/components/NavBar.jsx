@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="flex  h-[10vh] mt-2 mb-2 justify-between items-center">
           <div className="cursor-pointer">
             <Link to={"/"}>
-            <img src={redlogo} className='w-40 h-auto' />
+            <img src={redlogo} alt="Digital Marketing" className='w-40 h-auto' />
             </Link>
           </div>
           <div className='flex gap-1 text-[#fd0202] items-center'>
@@ -95,7 +95,7 @@ const Navbar = () => {
   <div className="flex  h-[10vh] p-4   items-center justify-between">
   <div className="cursor-pointer">
             <Link to={"/"}>
-            <img src={redlogo} className='w-40 h-auto' />
+            <img src={redlogo} alt="Digital Marketing" className='w-40 h-auto' />
             </Link>
           </div>
     <div
