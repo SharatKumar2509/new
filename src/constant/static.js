@@ -690,13 +690,13 @@ export const perPrice =[
   },
   {
     "title": "PPC Ads Management",
-    "price": "$500",
+    "price": "$1000",
     "background": "orange",
     "color": "black"
   },
   {
     "title": "Social Media Management",
-    "price": "$500",
+    "price": "$1000",
     "background": "limegreen",
     "color": "black"
   }
