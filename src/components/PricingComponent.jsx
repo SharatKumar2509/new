@@ -34,7 +34,7 @@ const PricingComponent = () => {
         style={{backgroundColor: 'orange'}}
       >
         <h2 className="sm:text-2xl text-xl font-semibold">PPC Ads Management</h2>
-        <p>$500 per month</p>
+        <p>$1000 per month</p>
       </div>
 
       <div
@@ -42,7 +42,7 @@ const PricingComponent = () => {
         style={{backgroundColor: 'limegreen'}}
       >
         <h2 className="sm:text-2xl text-xl font-semibold">Social Media Management</h2>
-        <p>$500 per month</p>
+        <p>$1000 per month</p>
       </div>
 
     </div>
